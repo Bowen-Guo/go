@@ -28,7 +28,7 @@ type AppInsightsSyncer struct {
 }
 
 func NewAppInsightsCore() zapcore.Core {
-	// instrumentationKey := "cefb0946-dbca-4b23-bc3c-9fc355a98436" // Do not check in.
+	// instrumentationKey := ""
 	// telemetryConf := appinsights.NewTelemetryConfiguration(instrumentationKey)
 	// telemetryClient := appinsights.NewTelemetryClientFromConfig(telemetryConf)
 	appInsightsSyncer = &AppInsightsSyncer{client: nil, customDimensions: nil}
